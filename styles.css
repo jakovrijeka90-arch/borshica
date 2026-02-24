@@ -1,0 +1,53 @@
+/* Borshica final styles */
+:root{
+  --brand:#7E3780;      /* neon pink */
+  --brand-2:#C4BAA6;    /* pastel grey orange */
+  --ink:#403A39;        /* dark grey */
+  --bg:#fff;
+  --muted:#6b6b6b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Poppins',system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+img{max-width:100%;display:block}
+.container{width:min(1100px,92%);margin-inline:auto}
+
+.site-header{background:linear-gradient(180deg, #f6f2f4 0%, #ffffff 80%);}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:64px 0}
+.hero-text h1{font-size:56px;margin:0 0 8px;color:var(--ink)}
+.hero-text .lead{color:#5a4f56;margin:0 0 18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:var(--brand);color:#fff;text-decoration:none;padding:12px 18px;border-radius:12px;font-weight:700;box-shadow:0 6px 14px rgba(126,55,128,.25)}
+.btn:hover{filter:brightness(.95)}
+.btn-outline{border:2px solid var(--brand);color:var(--brand);text-decoration:none;padding:10px 16px;border-radius:12px;font-weight:700}
+.btn-outline:hover{background:var(--brand);color:#fff}
+.hero-media img{border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+
+.section{padding:56px 0}
+.section h2{font-size:30px;margin:0 0 18px}
+.section-alt{background:linear-gradient(180deg,#fff 0%, #faf7fb 100%)}
+
+.grid{display:grid;gap:18px}
+.cards{grid-template-columns:repeat(3,1fr)}
+.gallery{grid-template-columns:repeat(4,1fr)}
+@media (max-width: 900px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 560px){.cards,.gallery{grid-template-columns:1fr}}
+
+.card{background:#fff;border:1px solid #eee;border-radius:16px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.05);display:flex;flex-direction:column}
+.card img{height:260px;object-fit:cover}
+.card-body{padding:14px 16px}
+.card-body h3{margin:4px 0 8px}
+.card-body p{margin:0 0 12px;color:#6b6b6b}
+
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{background:#fff;border:1px solid #eee;border-radius:14px;padding:16px;min-height:160px}
+.step .num{width:32px;height:32px;border-radius:50%;background:var(--brand-2);color:#000;display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:8px}
+.process-gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}
+.process-gallery img{border-radius:12px}
+
+.about .narrow{width:min(800px,92%)}
+
+.contact ul{list-style:none;padding:0;margin:0 0 8px}
+.contact li{margin:6px 0}
+
+.site-footer{padding:20px 0;border-top:1px solid #eee;text-align:center;color:#6b6b6b}
